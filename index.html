@@ -1,1 +1,138 @@
-<h1> hola </h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Jans Astudillo</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="flex justify-between items-center p-4 shadow bg-white fixed w-full z-10">
+    <h1 class="font-bold text-lg">Jans Astudillo</h1>
+    <button id="darkModeBtn" class="px-3 py-1 bg-gray-800 text-white rounded">
+      🌙 Modo oscuro
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-4">Hola, soy Jans Astudillo</h2>
+    <p class="text-xl mb-6">Estudiante de Ingeniería en Informática</p>
+    <p class="max-w-xl mb-6">
+      Me gusta crear aplicaciones útiles y aprender nuevas tecnologías.
+      Este es mi portafolio personal donde muestro mis proyectos y habilidades.
+    </p>
+    <div class="flex gap-4">
+      <a href="#proyectos" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">
+        Ver proyectos
+      </a>
+      <a href="cv/cv.pdf" class="bg-gray-700 text-white px-5 py-2 rounded hover:bg-gray-900" download>
+        Descargar CV
+      </a>
+      <a href="intereses.html" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">
+        Ver intereses
+      </a>
+
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="py-16 px-6 bg-white" data-aos="fade-right">
+    <h2 class="text-3xl font-bold mb-4 text-center">Sobre mí</h2>
+    <p class="max-w-3xl mx-auto mb-3 text-center">
+      Soy estudiante de Ingeniería en Informática con interés en el desarrollo de software,
+      aplicaciones web y móviles. Me gusta resolver problemas usando programación y seguir
+      aprendiendo constantemente.
+    </p>
+    <p class="max-w-3xl mx-auto text-center">
+      He trabajado en proyectos académicos utilizando Java, Python, Django y bases de datos.
+      Actualmente estoy mejorando mis conocimientos en desarrollo frontend y APIs REST.
+    </p>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="py-16 px-6 bg-gray-100" data-aos="fade-left">
+    <h2 class="text-3xl font-bold mb-6 text-center">Tecnologías</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-center">
+      <div class="p-4 bg-white shadow rounded">HTML</div>      
+      <div class="p-4 bg-white shadow rounded">React</div>
+      <div class="p-4 bg-white shadow rounded">CSS / Tailwind / Bootstrap</div>
+      <div class="p-4 bg-white shadow rounded">JavaScript</div>
+      <div class="p-4 bg-white shadow rounded">Python</div>
+      <div class="p-4 bg-white shadow rounded">Django</div>
+      <div class="p-4 bg-white shadow rounded">MySQL</div>
+      <div class="p-4 bg-white shadow rounded">Git / GitHub</div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="py-16 px-6 bg-white" data-aos="zoom-in">
+    <h2 class="text-3xl font-bold mb-6 text-center">Proyectos</h2>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h3 class="font-bold text-xl mb-2">Sistema de Usuarios</h3>
+        <p class="mb-2">
+          Aplicación web con registro e inicio de sesión usando Django y base de datos.
+        </p>
+        <p class="text-sm mb-3">Tecnologías: Django, MySQL</p>
+        <a href="#" class="text-blue-600 underline">Ver en GitHub</a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h3 class="font-bold text-xl mb-2">App Android CRUD</h3>
+        <p class="mb-2">
+          Aplicación móvil para gestionar clientes con conexión a una API.
+        </p>
+        <p class="text-sm mb-3">Tecnologías: Java, Android</p>
+        <a href="#" class="text-blue-600 underline">Ver en GitHub</a>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h3 class="font-bold text-xl mb-2">Portafolio Web</h3>
+        <p class="mb-2">
+          Página web personal para mostrar mis proyectos y habilidades.
+        </p>
+        <p class="text-sm mb-3">Tecnologías: HTML, Tailwind, JavaScript</p>
+        <a href="#" class="text-blue-600 underline">Ver en GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-16 px-6 bg-gray-100" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 text-center">Contacto</h2>
+    <p class="text-center mb-4">Puedes contactarme en:</p>
+
+    <div class="text-center">
+      <p>📧 Email: jans@example.com</p>
+      <p>💼 GitHub: github.com/tuusuario</p>
+      <p>🔗 LinkedIn: linkedin.com/in/tuusuario</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p>© 2026 Jans Astudillo - Portafolio personal</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
